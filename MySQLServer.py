@@ -1,6 +1,7 @@
 #Database script
 
 from getpass import getpass
+import mysql.connector
 from mysql.connector import connect, error
 
 try:
