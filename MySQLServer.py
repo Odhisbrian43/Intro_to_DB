@@ -12,6 +12,5 @@ try:
     password="12345",
     database="alx_book_store") as connection:
         print("Database 'alx_book_store' created successfully!")
-except Error as e:
-    print(e)
+except mysql.connector.Error
 
