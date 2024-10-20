@@ -4,6 +4,8 @@ from getpass import getpass
 import mysql.connector
 from mysql.connector import connect, error
 
+CREATE DATABASE alx_book_store IF NOT EXIST
+
 try:
     with connect(
             host="localhost",
