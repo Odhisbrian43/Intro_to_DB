@@ -4,14 +4,13 @@ from getpass import getpass
 import mysql.connector
 from mysql.connector import connect, error
 
-CREATE DATABASE IF NOT EXISTS alx_book_store
-
+CREATE DATABASE IF NOT EXISTS Intro_to_DB
 try:
-    with connect(
-            host="localhost",
-            user=input("Enter username: "),
-            password=getpass("Enter password: "),
-    ) as connection:
+    with mydb = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="12345",
+    database="Intro_to_BD") as connection:
         print("Database 'alx_book_store' created successfully!")
 except Error as e:
     print(e)
